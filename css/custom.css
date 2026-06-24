@@ -1,0 +1,12 @@
+.project-box:hover{
+    scale: 1.05;
+    filter: drop-shadow(20px 10px 5px);
+
+}
+
+.project-box{
+    transition: scale 0.2s;
+    transition: filter 0.2s;
+    filter: drop-shadow(10px 10px 5px);
+
+}
