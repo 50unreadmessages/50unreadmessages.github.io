@@ -1,3 +1,14 @@
+a:visited, a:hover, a:active, a:focus {
+   color: yourColor !important;
+   text-decoration: none !important;
+   outline: none !important;
+}
+
+a img {
+    border: none;
+    outline: none;
+}
+
 .project-box:hover{
     scale: 1.05;
     filter: drop-shadow(20px 10px 5px);
