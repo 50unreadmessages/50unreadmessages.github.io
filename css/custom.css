@@ -11,17 +11,28 @@
 
 }
 
-.hover_scale:hover{
-    scale: 1.05;
-    filter: drop-shadow(20px 10px 5px);
+.sm-drop-shadow{
+    filter: drop-shadow(5px 5px 5px);
+    transition: filter 0.2s;
+}
+.sm-drop-shadow:hover{
+    filter: drop-shadow(10px 5px 5px);
 
 }
 
+
+.hover_scale:hover{
+    scale: 1.05;
+
+}
 .hover_scale{
     transition: scale 0.2s;
     transition: filter 0.2s;
-    filter: drop-shadow(10px 10px 5px);
+}
 
+.profile-icon{
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .company-logo{
