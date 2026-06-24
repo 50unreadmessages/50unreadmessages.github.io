@@ -15,6 +15,10 @@
     filter: drop-shadow(5px 5px 5px);
     transition: filter 0.2s;
 }
+.sm-drop-shadow-static{
+    filter: drop-shadow(5px 5px 5px);
+    transition: filter 0.2s;
+}
 .sm-drop-shadow:hover{
     filter: drop-shadow(10px 5px 5px);
 
