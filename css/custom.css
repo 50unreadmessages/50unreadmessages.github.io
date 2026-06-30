@@ -19,6 +19,9 @@ a:visited, a:hover, a:active, a:focus {
     max-width: 50%;
     min-width: 450px;
 }
+.project-container{
+    max-width: 98%;
+}
 
 .sm-drop-shadow{
     filter: drop-shadow(5px 5px 5px);
@@ -56,7 +59,6 @@ a:visited, a:hover, a:active, a:focus {
 }
 
 .company-logo{
-    filter: drop-shadow(20px 10px 5px);
     max-width: 40%;
     min-width: 300px
 }
