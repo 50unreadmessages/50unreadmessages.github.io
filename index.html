@@ -13,7 +13,12 @@
 
     <header>
     <div class="container-fluid justify-content-center flex-column d-flex text-center align-items-center">
-        <img src="images/temp_50_unread_messages_logo.png" class="align-self-center company-logo" alt="">
+        <div id="logo" class="logo-wrapper position-relative align-self-center hover_scale ">
+            <img id="company-logo" src="images/temp_50_unread_messages_logo_blank.png" class="company-logo w-100" alt="">
+            
+            <img id="first-number" src="images/5.png" class="overlay-number num-left" alt="First digit">
+            <img id="second-number" src="images/0.png" class="overlay-number num-right" alt="Second digit">
+        </div>
         <div class="d-flex flex-column flex-sm-row justify-content-center align-self-center align-items-center w-100 ">
             
 <!--VIV-->
@@ -77,7 +82,7 @@
         </div>
     </div>
 
-
+    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script type="importmap">
     {
@@ -87,14 +92,33 @@
       }
     }
     </script>
-    <!-- <script type="module">
-    import * as bootstrap from 'bootstrap'
-    const myCarouselElement = document.querySelector('#game_carousel')
 
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 2000,
-    touch: false
-    })
-    </script> -->
+    <script>
+        var unread_messages = 50
+        var logo = document.getElementById("logo")
+        var logo_image_element = document.getElementById("company-logo")
+        var first_number_element = document.getElementById("first-number")
+        var second_number_element = document.getElementById("second-number")
+        logo.addEventListener("click", (event) => {
+            unread_messages += 1
+
+            if (unread_messages > 99) {
+                logo_image_element.src = "images/99_plus_unread_messages_logo.png"
+                first_number_element.hidden = true
+                second_number_element.hidden = true
+
+                
+                return
+            }
+            
+
+            var num1 = String(unread_messages).charAt(0)
+            var num2 = String(unread_messages).charAt(1)
+
+            first_number_element.src = "images/" + num1 + ".png"
+            second_number_element.src = "images/" + num2 + ".png"
+        })
+
+    </script>
     </body>
 </html>

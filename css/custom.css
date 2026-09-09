@@ -59,8 +59,10 @@ a:visited, a:hover, a:active, a:focus {
 }
 
 .company-logo{
-    max-width: 40%;
-    min-width: 300px
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
 }
 
 .link-container a img{
@@ -92,4 +94,42 @@ a:visited, a:hover, a:active, a:focus {
 
 .signup-text{
     max-width: 450px;
+}
+
+.logo-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+    min-width: 300px;
+}
+
+.overlay-number {
+    position: absolute;
+    height: auto;
+    z-index: 2;
+    transform: translate3d(0, 0, 0);
+}
+
+.num-left {
+    scale: 70%;
+    width: 10%;
+    top: 12%;
+    left: 7.5%;
+}
+
+.num-right {
+    scale: 67%;
+    width: 10%;
+    top: 13.5%;
+    left: 11.5%;
+}
+
+
+.logo-wrapper:active {
+    transform: scale(1.08);
+    transition: transform 0.05s ease-out;
+}
+
+.logo-wrapper {
+    transition: transform 0.15s ease-in-out;
 }
