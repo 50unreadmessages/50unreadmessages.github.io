@@ -63,10 +63,16 @@
         <img style="width: 350px;" src="images/3_lines_we_make_schmall_video_games_in_Amsterdam.png" class="d-lg-none">
         <img style="width: 900px;" src="images/we_make_schmall_games.png" class="d-none d-lg-block">  
     </div>
-        <div class="justify-content-center align-items-center d-flex flex-column flex-lg-row project-container">
-            <img class="project-box" src="images/project_boxes_acro.png" onmouseover="this.src='images/project_boxes_acro_hovered.png'" onmouseout="this.src='images/project_boxes_acro.png'" alt="">
-            <img class= "project-box" src="images/project_boxes_fishbiking.png" onmouseover="this.src='images/project_boxes_fishbiking_hovered.png'" onmouseout="this.src='images/project_boxes_fishbiking.png'" alt="">
+    <div class="justify-content-center align-items-center d-flex flex-column flex-lg-row project-container">
+        <div class="project-wrapper">
+            <img class="project-box-bg" src="images/project_boxes_acro.png" onmouseover="this.src='images/project_boxes_acro_hovered.png'" onmouseout="this.src='images/project_boxes_acro.png'" alt="">
+            <img src="images/capo_gameplay_clip.gif" class="project-gif" alt="Project preview">
         </div>
+        
+        <div class="project-wrapper">
+            <img class="project-box-bg" src="images/project_boxes_fishbiking.png" onmouseover="this.parentElement.querySelector('.project-box-bg').src='images/project_boxes_fishbiking_hovered.png'" onmouseout="this.parentElement.querySelector('.project-box-bg').src='images/project_boxes_fishbiking.png'" alt="">
+        </div>
+    </div>
         <div class="d-flex flex-column align-items-center">
             <form style="min-width: 400px;" action="https://formspree.io/f/xvzjzrow" method="POST" class="rounded-2 m-4 p-4 w-50">
                 <div class="d-flex flex-column align-items-center">

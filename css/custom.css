@@ -19,6 +19,39 @@ a:visited, a:hover, a:active, a:focus {
     max-width: 50%;
     min-width: 450px;
 }
+
+.project-wrapper:hover {
+    scale: 1.05;
+    filter: drop-shadow(20px 10px 5px);
+}
+
+.project-wrapper {
+    position: relative;
+    display: inline-block;
+    transition: scale 0.2s;
+    transition: filter 0.2s;
+    filter: drop-shadow(10px 10px 5px);
+    max-width: 50%;
+    min-width: 450px;
+    width: 100%;
+}
+
+.project-box-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-gif {
+    position: absolute;
+    z-index: 2;
+    transform: translate3d(0, 0, 0);
+    width: 30%;
+    top: 52.5%;
+    left: 34.7%;
+    scale: 2.023;
+}
+
 .project-container{
     max-width: 98%;
 }
@@ -101,6 +134,12 @@ a:visited, a:hover, a:active, a:focus {
     display: inline-block;
     max-width: 40%;
     min-width: 300px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.logo-wrapper:active {
+    transform: scale(1.08);
+    transition: transform 0.05s ease-out;
 }
 
 .overlay-number {
@@ -122,14 +161,4 @@ a:visited, a:hover, a:active, a:focus {
     width: 10%;
     top: 13.5%;
     left: 11.5%;
-}
-
-
-.logo-wrapper:active {
-    transform: scale(1.08);
-    transition: transform 0.05s ease-out;
-}
-
-.logo-wrapper {
-    transition: transform 0.15s ease-in-out;
 }
